@@ -4,13 +4,11 @@ import {
   Select,
   Input,
   DatePicker,
-  Switch,
-  Slider,
   Button,
   Rate,
   Typography,
   Space,
-  Divider,
+  message,
 } from 'antd';
 import './App.less';
 import axios from 'axios';
@@ -69,6 +67,7 @@ class App extends React.Component {
       .then((response) => {
         this.setState({ submitLoading: false });
         console.log(response);
+        message.success('Successfully received account statements');
       });
   };
 
