@@ -14,7 +14,7 @@ import './App.less';
 import axios from 'axios';
 import Cleave from 'cleave.js/react';
 
-const BACKEND_URL = 'http://0.0.0.0:5001';
+const BACKEND_URL = 'http://ub2ynab-go-api:5001';
 
 const { Option } = Select;
 const { Title } = Typography;
