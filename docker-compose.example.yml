@@ -1,4 +1,4 @@
-version: "3"
+version: "2"
 services:
   go-api:
     build:
@@ -11,6 +11,7 @@ services:
       context: ./react-frontend
       args:
         - CONTRACT_NUMBER=12345678
+        - API_URL=http://localhost:5001
     ports:
       - "5002:80"
     container_name: ubs2ynab-react-frontend

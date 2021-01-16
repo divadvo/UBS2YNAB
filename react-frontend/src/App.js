@@ -14,7 +14,7 @@ import './App.less';
 import axios from 'axios';
 import Cleave from 'cleave.js/react';
 
-const BACKEND_URL = 'http://ub2ynab-go-api:5001';
+const BACKEND_URL = process.env.REACT_APP_API_URL;
 
 const { Option } = Select;
 const { Title } = Typography;
@@ -23,7 +23,9 @@ class App extends React.Component {
     super(props);
     console.log(
       'contract number from ENV=',
-      process.env.REACT_APP_CONTRACT_NUMBER
+      process.env.REACT_APP_CONTRACT_NUMBER,
+      'REACT_APP_API_URL=',
+      process.env.REACT_APP_API_URL
     );
     this.state = {
       challenge: '',
