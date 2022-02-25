@@ -4,7 +4,7 @@
 
 This tool automatically tries to export all transactions from the available bank and credit card accounts into a.csv, which can be easily imported into YNAB.
 The UBS Access Card is required for export to access the UBS account.
-The API and the csvExport implementations are fully copied from [https://github.com/Che4ter/UBStoYNAB](https://github.com/Che4ter/UBStoYNAB])
+The API and the csvExport implementations are fully copied from [https://github.com/Che4ter/UBStoYNAB](https://github.com/Che4ter/UBStoYNAB)
 
 This projects adds a React frontend (based on ant design), as well as a goland echo api. Essentially this project just adds a simple web-based frontend as extension to the Che4ter's command line application.
 This is a quick and dirty implementation: no error handling, no tests, ... so far.
