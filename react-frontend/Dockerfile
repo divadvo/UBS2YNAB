@@ -1,5 +1,5 @@
 # Stage 1 - the build process
-FROM node:latest as build-deps
+FROM node:16 as build-deps
 
 ARG CONTRACT_NUMBER
 ARG API_URL
